@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer Times in Algeria</title>
+    <link rel="stylesheet" href="salat.css">
+    <script src="node_modules/axios/dist/axios.js"></script>
+</head>
+
+<body>
+
+    <div class="prayer-container">
+        <h1>Prayer Times in Algeria</h1>
+
+        <select id="city">
+            <option value="">Select a Wilaya</option>
+            <option value="adrar">Adrar</option>
+            <option value="chlef">Chlef</option>
+            <option value="laghouat">Laghouat</option>
+            <option value="oum-el-bouaghi">Oum El Bouaghi</option>
+            <option value="batna">Batna</option>
+            <option value="bejaia">Béjaïa</option>
+            <option value="biskra">Biskra</option>
+            <option value="bechar">Béchar</option>
+            <option value="blida">Blida</option>
+            <option value="bouira">Bouira</option>
+            <option value="tamanrasset">Tamanrasset</option>
+            <option value="tebessa">Tébessa</option>
+            <option value="tlemcen">Tlemcen</option>
+            <option value="tiaret">Tiaret</option>
+            <option value="tizi-ouzou">Tizi Ouzou</option>
+            <option value="algiers">Algiers</option>
+            <option value="djelfa">Djelfa</option>
+            <option value="jijel">Jijel</option>
+            <option value="setif">Sétif</option>
+            <option value="saida">Saïda</option>
+            <option value="skikda">Skikda</option>
+            <option value="sidi-bel-abbes">Sidi Bel Abbès</option>
+            <option value="annaba">Annaba</option>
+            <option value="guelma">Guelma</option>
+            <option value="constantine">Constantine</option>
+            <option value="medea">Médéa</option>
+            <option value="mostaganem">Mostaganem</option>
+            <option value="msila">MSila</option>
+            <option value="mascara">Mascara</option>
+            <option value="ouargla">Ouargla</option>
+            <option value="oran">Oran</option>
+            <option value="el-bayadh">El Bayadh</option>
+            <option value="illizi">Illizi</option>
+            <option value="bordj-bou-arreridj">Bordj Bou Arréridj</option>
+            <option value="boumerdes">Boumerdès</option>
+            <option value="el-tarf">El Tarf</option>
+            <option value="tindouf">Tindouf</option>
+            <option value="tissemsilt">Tissemsilt</option>
+            <option value="el-oued">El Oued</option>
+            <option value="khenchela">Khenchela</option>
+            <option value="souk-ahras">Souk Ahras</option>
+            <option value="tipaza">Tipaza</option>
+            <option value="mila">Mila</option>
+            <option value="ain-defla">Aïn Defla</option>
+            <option value="naama">Naâma</option>
+            <option value="ain-temouchent">Aïn Témouchent</option>
+            <option value="ghardaia">Ghardaïa</option>
+            <option value="relizane">Relizane</option>
+            <option value="timimoun">Timimoun</option>
+            <option value="bordj-badji-mokhtar">Bordj Badji Mokhtar</option>
+            <option value="ouled-djellal">Ouled Djellal</option>
+            <option value="beni-abbes">Béni Abbès</option>
+            <option value="in-salah">In Salah</option>
+            <option value="in-guezzam">In Guezzam</option>
+            <option value="touggourt">Touggourt</option>
+            <option value="djanet">Djanet</option>
+            <option value="el-mghair">El M'Ghair</option>
+            <option value="el-meniaa">El Meniaa</option>
+        </select>
+
+
+        <button onclick="Get_Prayer_Times()">Get Prayer Times</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Prayer</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fajr</td>
+                    <td id="Fajr"></td>
+                </tr>
+                <tr>
+                    <td>Sunrise</td>
+                    <td id="Sunrise"></td>
+                </tr>
+                <tr>
+                    <td>Dhuhr</td>
+                    <td id="Dhuhr"></td>
+                </tr>
+                <tr>
+                    <td>Asr</td>
+                    <td id="Asr"></td>
+                </tr>
+                <tr>
+                    <td>Maghrib</td>
+                    <td id="Maghrib"></td>
+                </tr>
+                <tr>
+                    <td>Isha</td>
+                    <td id="Isha"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="salat.js">
+</script>
+
+</html>
